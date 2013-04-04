@@ -20,6 +20,7 @@ class Medium(models.Model):
     medium_type = models.CharField(max_length=2,
                                     choices=MEDIUM_CHOICES,
                                     default=MOVIE)
-                                    
+    owner = models.ForeignKey('auth.User', related_name='media')
+    
     class Meta:
             ordering = ('created',)
