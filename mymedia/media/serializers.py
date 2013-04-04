@@ -2,12 +2,12 @@ from rest_framework import serializers
 from media.models import Medium
 from django.contrib.auth.models import User
 
-class UserSerializer(serializers.ModelSerializer):
-    media = serializers.PrimaryKeyRelatedField(many=True)
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    media = serializers.HyperlinkedRelatedField(many=True, view_name='medium-detail')
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'media')
+        fields = ('url', 'username', 'media')
 
 class MediaSerializer(serializers.ModelSerializer):
     owner = serializers.Field(source='owner.username')
