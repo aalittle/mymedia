@@ -6,5 +6,6 @@ class IsOwner(permissions.BasePermission):
     """
 
     def has_object_permission(self, request, view, obj):
-        # Read/Write permissions are only allowed to the owner of the snippet
+        # Read/Write permissions are only allowed to the owner of the medium
+        
         return obj.owner == request.user
