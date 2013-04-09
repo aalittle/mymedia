@@ -122,14 +122,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'rest_framework',
     'media',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'provider',
+    'provider.oauth2',
+    'south',
+    'django.contrib.admin'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
 
 REST_FRAMEWORK = {
-    'PAGINATE_BY': 10
+    'PAGINATE_BY': 10,
 }
 
 # A sample logging configuration. The only tangible logging
