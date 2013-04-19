@@ -1,3 +1,7 @@
-Django==1.5.1
-djangorestframework==2.2.5
+Django==1.5
+Pygments==1.6
+South==0.7.6
+django-oauth2-provider==0.2.4
+djangorestframework==2.2.3
+shortuuid==0.3
 wsgiref==0.1.2
