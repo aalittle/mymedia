@@ -8,7 +8,6 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
 import logging
-from rest_framework.authentication import OAuth2Authentication
 
 
 @api_view(('GET',))
@@ -21,10 +20,12 @@ def api_root(request, format=None):
 class UserList(generics.ListAPIView):
     model = User
     serializer_class = UserSerializer
+    permission_classes = (permissions.IsAdminUser,)
 
 class UserDetail(generics.RetrieveAPIView):
     model = User
     serializer_class = UserSerializer
+    permission_classes = (permissions.IsAdminUser,)
 
 class MediumList(generics.ListCreateAPIView):
     model = Medium
