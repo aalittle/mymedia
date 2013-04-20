@@ -1,7 +1,7 @@
 mymedia
 =======
 
-MyMedia is a simple REST API implemented with (Django REST Framework)[http://django-rest-framework.org/].
+MyMedia is a simple REST API implemented with Django REST Framework - http://django-rest-framework.org/.
 
 The following end points are available from this API:
 	/
@@ -24,9 +24,9 @@ To get started with this basic Django app, please follow along.
 
 5. Before we do anything else we'll create a new virtual environment, using virtualenv. This will make sure our package configuration is kept nicely isolated from any other projects we're working on.
 
-	<pre><code>mkdir ~/env
-	virtualenv ~/env/tutorial
-	source ~/env/tutorial/bin/activate</pre></code>
+	<pre><code>mkdir /env
+	virtualenv /env/mymedia
+	source /env/mymedia/bin/activate</pre></code>
 
 
 6. And finally, you can use the requirements.txt file so that your environment is completely and easily replicable:
@@ -42,6 +42,5 @@ To get started with this basic Django app, please follow along.
 9. Now run the python server
 	<pre><code>python mymedia/manage.py runserver 8080</code></pre>
 
-10. Now start a browser and navigate to (localhost:8080/)[localhost:8080/]
-
+10. Now start a browser and navigate to localhost:8080/
 
