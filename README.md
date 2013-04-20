@@ -1,6 +1,8 @@
 mymedia
 =======
 
+**Go here for a video walkthrough of the steps below: http://youtu.be/QgHu_O3SgxQ **
+
 MyMedia is a simple REST API implemented with Django REST Framework - http://django-rest-framework.org/.
 
 The following end points are available from this API:
