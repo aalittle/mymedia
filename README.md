@@ -6,8 +6,11 @@ mymedia
 MyMedia is a simple REST API implemented with Django REST Framework - http://django-rest-framework.org/.
 
 The following end points are available from this API:
+	 
 	 /
+	 
 	 /users
+	 
 	 /media
 
 To get started with this basic Django app, please follow along.
