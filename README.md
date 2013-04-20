@@ -21,7 +21,7 @@ To get started with this basic Django app, please follow along.
 3. The first thing you will need to do is install pip. If you have setuptools installed, which you most likely will with most modern platforms, you can install pip through easy_install:
     <pre><code>easy_install pip</code></pre>
 	
-4. Next, you'll need to install virtualenv with pip:
+4. Next, you'll need to install virtualenv with pip. To learn more about pip and virtualenv, I'd recommend: http://dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
     <pre><code>pip install virtualenv</code></pre>
 
 5. Before we do anything else we'll create a new virtual environment, using virtualenv. This will make sure our package configuration is kept nicely isolated from any other projects we're working on.
