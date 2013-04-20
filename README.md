@@ -22,19 +22,26 @@ To get started with this basic Django app, please follow along.
 4. Next, you'll need to install virtualenv with pip:
     <pre><code>pip install virtualenv</code></pre>
 
-5. And finally, you can use the requirements.txt file so that your environment is completely and easily replicable:
+5. Before we do anything else we'll create a new virtual environment, using virtualenv. This will make sure our package configuration is kept nicely isolated from any other projects we're working on.
+
+	<pre><code>mkdir ~/env
+	virtualenv ~/env/tutorial
+	source ~/env/tutorial/bin/activate</pre></code>
+
+
+6. And finally, you can use the requirements.txt file so that your environment is completely and easily replicable:
     <pre><code>$ pip install -r requirements.txt</code></pre>
 	
 	
-6. Now run the syncdb command which will initialize part of the local database file.
+7. Now run the syncdb command which will initialize part of the local database file. Also, take the time to create a super user for the database, since you'll be prompted to do so.
     <pre><code>python mymedia/manage.py syncdb</code></pre>
 	
-7. Now run the migrate command which will complete the database setup by running the migration scripts.
+8. Now run the migrate command which will complete the database setup by running the migration scripts.
     <pre><code>python mymedia/manage.py migrate</code></pre>
 
-8. Now run the python server
+9. Now run the python server
 	<pre><code>python mymedia/manage.py runserver 8080</code></pre>
 
-9. Now start a browser and navigate to (localhost:8080/)[localhost:8080/]
+10. Now start a browser and navigate to (localhost:8080/)[localhost:8080/]
 
 
